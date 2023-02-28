@@ -26,21 +26,21 @@ public class SnakesAndLaddersGame {
 			for (Player player : players) {
 				dice.rollDice();
 				player.movePlayer(dice.getCurrentNumber());
-				if(player.getCurrentSquare() >= 100) {
+				if(player.getCurrentPosition() >= 100) {
 					System.out.println(player.toString()+ " You have reached the end of the board - WINNER");
 					noWinner=false;
 				}
 				else {
-					System.out.println(player.toString() + " You landed on Square " + player.getCurrentSquare() + 
+					System.out.println(player.toString() + " You landed on Square " + player.getCurrentPosition() + 
 						" This square is " 
-						+ board.getCurrentSquare(player.getCurrentSquare()).toString() );
+						+ board.getCurrentSquare(player.getCurrentPosition()).toString() );
 					
-					if(board.getCurrentSquare(player.getCurrentSquare()).getSquareType()==Square.TYPE_LADDER) {
-						player.setCurrentSquare(board.getCurrentSquare(player.getCurrentSquare()).getGoesTo());
+					if(board.getCurrentSquare(player.getCurrentPosition()).getSquareType()==Square.TYPE_LADDER) {
+						player.setCurrentPosition(board.getCurrentSquare(player.getCurrentPosition()).getGoesTo());
 					}
 					
-					if(board.getCurrentSquare(player.getCurrentSquare()).getSquareType()==Square.TYPE_SNAKE) {
-						player.setCurrentSquare(board.getCurrentSquare(player.getCurrentSquare()).getGoesTo());
+					if(board.getCurrentSquare(player.getCurrentPosition()).getSquareType()==Square.TYPE_SNAKE) {
+						player.setCurrentPosition(board.getCurrentSquare(player.getCurrentPosition()).getGoesTo());
 					}
 				}
 			}

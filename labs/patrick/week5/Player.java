@@ -13,11 +13,11 @@ public class Player {
 		this.currentPosition += number;
 	}
 	
-	public int getCurrentSquare () {
+	public int getCurrentPosition () {
 		return currentPosition;
 	}
 	
-	public void setCurrentSquare(int number) {
+	public void setCurrentPosition(int number) {
 		this.currentPosition = number;
 	}
 	
