@@ -1,0 +1,3 @@
+A sample text file
+split across
+several lines
