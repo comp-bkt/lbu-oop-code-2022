@@ -1,3 +1,5 @@
+package patrick.week5;
+
 import java.util.Random;
 
 public class Dice {	 

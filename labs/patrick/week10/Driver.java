@@ -1,3 +1,5 @@
+package patrick.week10;
+
 import java.util.Scanner;
 
 import javax.imageio.ImageIO;

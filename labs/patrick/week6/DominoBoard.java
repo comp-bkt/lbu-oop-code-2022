@@ -1,3 +1,5 @@
+package patrick.week6;
+
 import java.util.ArrayList;
 
 public class DominoBoard {

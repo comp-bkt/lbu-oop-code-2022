@@ -1,3 +1,4 @@
+package patrick.week6;
 
 public class DominoSet {
 

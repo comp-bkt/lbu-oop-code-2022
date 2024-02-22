@@ -1,3 +1,4 @@
+package patrick.week5;
 
 public class SnakesAndLadderBoard {
 

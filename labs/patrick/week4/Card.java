@@ -1,4 +1,4 @@
-/*
+package patrick.week4;/*
  * code base for Card class based on example from
  * https://math.hws.edu/javanotes/c5/s4.html
 */
